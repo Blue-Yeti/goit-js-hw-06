@@ -46,3 +46,69 @@ function createBoxes(amount) {
   }
   boxesDivEl.append(...elements)
 }
+
+
+
+
+
+
+
+
+// function incrementString(strng) {
+//   // return incrementedString
+//   let counter = 0 
+//   for (let i = strng.length - 1; i !== -1; i -= 1) {
+//     if (Number.isInteger(Number(strng[i]))) {
+//       counter += 1
+//     } else{
+//       break
+//     }
+//   }
+
+//   const letters = strng.slice(0, strng.length - counter)
+//   const numbers = strng.slice(strng.length - counter).split('')
+//   console.log('letters', letters);
+//   console.log('numbers',numbers);
+
+  
+//   if (!numbers[0] && numbers.length === 0) {
+//     return strng + 1;
+//   }
+
+//   //sort numbers
+//   let zeroes = []
+//   let numbersSorted = []
+//   for (const i of numbers) {
+//     if (i === '0') {
+//       zeroes.push(i)
+//     } else {
+//       numbersSorted.push(i)
+//     }
+//   }
+
+//   console.log('zeroes',zeroes);
+//   console.log('numbersSorted',numbersSorted);
+
+
+//   const ifEvery9 = numbersSorted.every(el => el === '9')
+//   if (ifEvery9 && zeroes.length) {
+//     zeroes.pop()
+//   }
+
+//   numbersSorted = Number(numbersSorted.join(''))+1
+//   console.log('after JOIN', numbersSorted);
+  
+//   return [...letters, ...zeroes, numbersSorted].join('')
+// }
+
+
+// console.log(incrementString('foo'));
+// console.log(incrementString('foo5fafa6'));
+// console.log(incrementString('foo23'));
+// console.log(incrementString('foo0042'));
+// console.log(incrementString('foo9'));
+// console.log(incrementString('foo099'));
+
+
+
+

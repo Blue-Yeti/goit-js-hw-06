@@ -8,11 +8,13 @@ function getRandomHexColor() {
 
 const bodyEl = document.querySelector('body');
 const changeColorBtnEl = document.querySelector('.change-color');
+const spanEl = document.querySelector('.color');
 
 changeColorBtnEl.addEventListener('click', (e) => {
-  bodyEl.style.backgroundColor = getRandomHexColor();
+  const hexValue = getRandomHexColor();
+  bodyEl.style.backgroundColor = hexValue
+  spanEl.innerText = hexValue
   // e.preventDefault();
-  
 }) 
 
 

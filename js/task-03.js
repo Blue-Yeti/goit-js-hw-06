@@ -19,7 +19,5 @@ galleryEl.style.flexDirection = 'column'
 galleryEl.style.alignItems = 'center'
 galleryEl.style.gap = '15px'
 
-images.forEach(el => {
-  const html = `<img src="${el.url}" alt="${el.alt}" width="500px">`;
-  galleryEl.insertAdjacentHTML("afterbegin", html);
-})
+const markUp = images.map(el => { return `<img src="${el.url}" alt="${el.alt}" width="500px">` });
+galleryEl.innerHTML = markUp.join('');

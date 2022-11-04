@@ -5,13 +5,13 @@ const buttonEl = formEl.querySelector('button[type="submit"')
 
 
 formEl.addEventListener("submit", (event) => { 
+    event.preventDefault();
     emailInputEl.value && passwordInputEl.value ? console.log({
         email: emailInputEl.value,
         password: passwordInputEl.value
     })
-        : alert('fu you nigga!');
+        : alert('love love love')
     
-    event.preventDefault();
 });
 
 
